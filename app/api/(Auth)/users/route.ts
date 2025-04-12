@@ -4,4 +4,15 @@ export const GET = () =>{
      return new NextResponse("api setup is working now")
 }
 
-// export default GET;
+
+export const POST = () =>{
+     return new NextResponse("api setup is working now")
+}
+
+export const PUT = () =>{
+     return new NextResponse("api setup is working now")
+}
+
+export const DELETE = () =>{
+     return new NextResponse("api setup is working now")
+}
