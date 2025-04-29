@@ -1,5 +1,6 @@
 import User from "@/libs/Models/User";
 import connectDB from "@/libs/Mongodb"
+import { request } from "http";
 import { NextResponse } from "next/server"
 
 export const GET = async() =>{
@@ -30,9 +31,20 @@ export const POST = async(request:Request) =>{
      }
 }
 
-export const PUT = () =>{
-     return new NextResponse("api setup is working now")
-}
+// export const PATCH = async(request:Request) =>{
+//     try {
+//           const {id,newName,newPassword} = await request.json();
+//           await connectDB();
+          
+//          const updatedUser = await User.findByIdAndUpdate({
+//                {name:newName},
+//                {password:newPassword}
+//          )}
+         
+//     } catch (error:any) {
+     
+//     }
+// }
 
 export const DELETE = () =>{
      return new NextResponse("api setup is working now")
