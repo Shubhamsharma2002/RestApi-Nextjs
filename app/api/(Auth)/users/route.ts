@@ -13,8 +13,21 @@ export const GET = async() =>{
 }
 
 
-export const POST = () =>{
-     return new NextResponse("api setup is working now")
+export const POST = async(request:Request) =>{
+     try {
+          const body = await request.json();
+          await connectDB();
+          const newUser = new User({
+               name:body.name,
+               email:body.email,
+               password:body.password
+          })
+
+          await newUser.save();
+          return new NextResponse(JSON.stringify({message:"User Created done ::)", user:newUser}),{status:200})
+     } catch (error:any) {
+          return new NextResponse("Error in facting the user" + error.message,{status:500})
+     }
 }
 
 export const PUT = () =>{
