@@ -31,20 +31,20 @@ export const POST = async(request:Request) =>{
      }
 }
 
-// export const PATCH = async(request:Request) =>{
-//     try {
-//           const {id,newName,newPassword} = await request.json();
-//           await connectDB();
+export const PATCH = async(request:Request) =>{
+    try {
+          const {id,newName,newPassword} = await request.json();
+          await connectDB();
           
-//          const updatedUser = await User.findByIdAndUpdate({
-//                {name:newName},
-//                {password:newPassword}
-//          )}
+     //     const updatedUser = await User.findByIdAndUpdate({
+     //           {name:newName},
+     //           {password:newPassword}
+     //     )}
          
-//     } catch (error:any) {
+    } catch (error:any) {
      
-//     }
-// }
+    }
+}
 
 export const DELETE = () =>{
      return new NextResponse("api setup is working now")
