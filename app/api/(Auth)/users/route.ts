@@ -47,5 +47,9 @@ export const PATCH = async(request:Request) =>{
 }
 
 export const DELETE = () =>{
-     return new NextResponse("api setup is working now")
+     try {
+          
+     } catch (error) {
+          
+     }
 }
