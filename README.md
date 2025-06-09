@@ -1,20 +1,15 @@
+# 🚀 Next.js REST API with TypeScript and MongoDB
 
+This project is a simple and scalable REST API built using **Next.js API Routes**, **TypeScript**, and **MongoDB**. It demonstrates how to structure a backend API using Next.js for server-side functions while integrating a MongoDB database for data persistence.
 
-## Getting Started
+## 🛠️ Tech Stack
 
-First, run the development server:
+- **Framework:** [Next.js](https://nextjs.org/)
+- **Language:** TypeScript
+- **Database:** MongoDB (via [Mongoose](https://mongoosejs.com/))
+- **API Style:** RESTful
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-
+## 📁 Project Structure
 
